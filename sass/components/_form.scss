@@ -1,0 +1,194 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__btn--send {
+  display: flex;
+  align-items: center;
+  padding: 10px 76px;
+  background-color: var(--point-color);
+  border: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--main-color);
+  margin-top: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  transition-property: border-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+
+  &:hover,
+  &:focus {
+  color: var(--point-color);
+  background-color: var(--main-color);
+}
+}
+
+  &__fieldset {
+  padding: 0;
+  border: none;
+  margin: 0;
+  width: 370px;
+  @media screen and (min-width: 1200px) {
+  
+  width: 448px;
+  }
+}
+}
+
+.user {
+@media screen and (max-width: 1199px) {
+  width: 370px;
+  &:focus-within &__label{
+    color: var(--point-color);
+  }
+}
+
+  height: 40px;
+  position: relative;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 12px;
+  gap: 12px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 28px;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: border-color, fill;
+  
+&:focus-within{
+  border-color: var(--point-color);
+  fill: var(--point-color);
+}
+
+  &__label {
+  position: absolute;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--third-text-color);
+  top: -18px;
+  left: 0;
+}
+
+  &__input {
+    @media screen and (max-width: 1199px) {
+      width: 370px;
+      margin: 0;
+    }
+  padding: 0;
+  border: 0;
+  outline: 0;
+  width: 400px;
+}
+
+  &__icon {
+  width: 18px;
+  height: 18px;
+
+  &:focus-within {
+  border-color: var(--point-color);
+  fill: var(--point-color);
+}
+}
+  &__textarea {
+  resize: none;
+  outline: 0;
+  border: 0;
+  padding: 0;
+  width: 424px;
+  
+  &::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+}
+}
+
+.user-comment {
+  position: relative;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 0 12px 12px;
+  margin: 28px 0 20px;
+  height: 120px;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: border-color;
+}
+
+.user-checkbox {
+@media screen and (max-width: 1199px) {
+  margin-left: 0;
+  
+}
+
+  border: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0 0 0 14px;
+  padding: 0;
+  transition-property: border-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  & .user__input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 16px;
+  height: 15px;
+}
+& .user__label { 
+  @media screen and (max-width: 1199px) {
+  margin-left: 0;
+  line-height: 1.17;
+  font-size: 12px;
+}
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--third-text-color);
+  position: initial;
+  
+  & .user__link {
+  color: var(--point-color);
+}
+}
+}
+
+.user-checkmark {
+  width: 16px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  border: solid 2px #212121;
+  border-radius: 2px;
+  &.user__icon {
+  height: 15px;
+}
+}
+
+.user-checkbox input:checked ~ .user-checkmark {
+  border: 0;
+  background-color: var(--point-color);
+}

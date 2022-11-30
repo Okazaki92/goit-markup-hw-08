@@ -1,0 +1,108 @@
+
+.mobile-menu {
+    @media screen and (min-width: 768px) {
+       display: none; 
+    }
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    background-color: var(--main-color);
+    padding: 48px 40px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    transform: translateY(100%);
+    transition: transform 250ms ease-in-out;
+    
+    
+    &.open {
+        
+        transform: translateY(0);
+        
+    }
+
+    &__button--close {
+        background-color: var(--main-color);
+        border: none;
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        transition: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:focus-within {
+            color: var(--point-color);
+        }
+    }
+
+
+    &-nav__link,
+    &-social__link {
+        color: var(--main-text-color);
+        text-decoration: none;
+    }
+    &-nav {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+        margin-bottom: 306px;
+        &__item {
+            margin-bottom: 32px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &__link:focus-within {
+            color: var(--point-color);
+        }      
+        
+    }
+    
+    &-contacts {
+        margin-bottom: 64px;
+        &__item {
+            margin-bottom: 32px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &__link--phone {
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 1.18;
+            letter-spacing: 0.02em;
+            color: var(--point-color);
+            text-decoration: none;
+        }
+        &__link--email {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 1.17;
+            letter-spacing: 0.02em;
+            color: var(--third-text-color);
+            text-decoration: none;
+        }
+    }
+
+    &-social {
+        display: flex;
+        gap: 20px;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        
+        &__link {
+            color: var(--point-color);
+            border-right: 1px solid rgba(33, 33, 33, 0.2);
+            padding-right: 10px;
+        }
+    }
+}
+

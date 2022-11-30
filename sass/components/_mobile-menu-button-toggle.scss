@@ -1,0 +1,25 @@
+.mobile-menu__button--toggle {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--second-text-color);
+    border: none;
+    margin-left: auto;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus-within .mobile-menu__icon {
+        fill: var(--point-color);
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.mobile-menu__icon {
+    width: 40px;
+    height: 40px;
+}

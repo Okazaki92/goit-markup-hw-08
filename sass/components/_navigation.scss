@@ -1,0 +1,138 @@
+
+.header {
+  border-bottom: 1px solid #ececec;
+  
+
+  @media screen and (max-width: 767px) {
+    padding: 0;}
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 0;}
+    
+
+  &__container {
+    display: flex;
+    align-items: center;
+    }
+}
+
+.menu-nav{
+
+@media screen and (max-width: 767px) {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  padding: 0;
+  margin-left: 83px;
+}
+
+  &__list {
+
+  @media screen and (min-width: 768px) and (max-width:1199px) {
+      padding: 0;
+  }
+
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  line-height: 1.14;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px; 
+}
+  &__link {
+  text-decoration: none;
+  color: var(--main-text-color);
+  fill: var(--third-text-color);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color, fill;
+  &:hover,
+  &:focus {
+  color: var(--point-color);
+  fill: var(--point-color);
+  }
+  &:active {
+    color: var(--point-color);
+  }
+  &--current::after {
+  content: "";
+  border-bottom: solid 4px var(--point-color);
+  position: absolute;
+  border-radius: 2px;
+  position: absolute;
+  width: 100%;
+  top: 46px;
+  display: block;
+}
+}
+&__item {
+  margin-right: 46px;
+  position: relative;
+&:last-child {
+  margin-right: 0;
+}
+}
+}
+
+
+.contacts {
+  
+  @media screen and (max-width: 767px) {
+  display: none;
+}
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  align-items: flex-start;
+}
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  line-height: 1.14;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-left: auto;
+  
+  &__link {
+  text-decoration: none;
+  color: var(--third-text-color);
+  fill: var(--third-text-color);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color, fill;
+  &:hover,
+  &:focus {
+  color: var(--point-color);
+  fill: var(--point-color);
+  }
+}
+&__item {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 0;
+  }
+  margin-right: 50px;
+  &:last-child {
+  margin-right: 0;
+}
+}
+&__icon {
+  margin-right: 10px;
+  vertical-align: middle;
+  vertical-align: text-top;
+}
+}
