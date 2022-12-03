@@ -20,10 +20,11 @@
   max-width: 1200px;
   min-width: 320px;
   margin: 0 auto;
-  padding: 0 15px;
+  
 
   @media screen and (min-width: 480px) {
     max-width: var(--mobile);
+    
   }
   @media screen and (min-width: 768px) {
     max-width: var(--tablet);
@@ -55,11 +56,23 @@ p {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0;
+  
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
 }
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
+

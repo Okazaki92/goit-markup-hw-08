@@ -33,6 +33,9 @@
     flex-direction: column;
     align-items: center;
   }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 37px;
+  }
 &__list {
   list-style: none;
   color: var(--main-color);
@@ -45,6 +48,7 @@
   gap: 9px;
   @media screen and (max-width: 1199px) {
   align-items: center;
+  gap: 8px;
   }
 }
 &__address {
@@ -68,6 +72,11 @@
 
 .footer-social {
   margin: 0;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 37px;
+  }
+
   &__title {
   color: var(--main-color);
   margin-bottom: 20px;
@@ -109,6 +118,7 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    margin-top: 0;
   }
 
 &__icon--send {

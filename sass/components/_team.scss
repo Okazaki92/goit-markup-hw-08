@@ -1,7 +1,8 @@
 
 .team {
   background-color: var(--button-color);
-  &__title {
+
+&__title {
   font-size: 36px;
   line-height: 1.17;
   font-weight: 700;
@@ -12,8 +13,10 @@
     line-height: 1.18;
     font-size: 28px;
     letter-spacing: 0.03em;
+    margin-bottom: 30px;
   }
 }
+
 &__list {
   list-style: none;
   display: flex;
@@ -33,6 +36,9 @@
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+    @media screen and (max-width: 767px) {
+      width: 450px;
+    }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       width: 354px;
     }
@@ -44,6 +50,7 @@
 }
 &__img {
   display: block;
+  width: 100%;
 }
 &__subtitle{
   color: var(--third-text-color);

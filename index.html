@@ -20,7 +20,13 @@
     <!-- -------MOBILE MENU------- -->
    
     <div class="mobile-menu" id="mobile-menu">
-        <button class="mobile-menu__button--close">X</button>
+        <div class="mobile-menu_container">
+            <button class="mobile-menu__button--close">
+                <svg class="mobile-menu__icon">
+                    <use href="./images/icons.svg#button-close_40px">
+                    </use>
+                </svg>
+            </button>
             <ul class="mobile-menu-nav">
                 <li class="mobile-menu-nav__item">
                     <a href="./index.html" class="mobile-menu-nav__link">Agencja</a>
@@ -55,6 +61,7 @@
                     <a class="mobile-menu-social__link" href="#">Linkedin</a>
                 </li>
             </ul>
+        </div>
     </div>
 
 
@@ -62,7 +69,12 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="modal__btn-close" data-modal-close>X</button>
+            <button type="button" class="modal__btn-close" data-modal-close>
+                <svg class="modal_icon">
+                    <use href="./images/icons.svg#modal-btn-close">
+                    </use>
+                </svg>
+            </button>
             <h2 class="modal__header">Zostaw swoje dane w formularzu poniżej</h2>
             <form class="form">
                 <fieldset class="form__fieldset">
@@ -271,7 +283,7 @@
                                 type="image/jpg">
                             <source srcset="./images/team_card_1_desktop.jpg 1x, 
                                                 ./images/team_card_1_desktop@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg">
-                            <img class="card__img" src="./images/team_card_1_desktop.jpg" alt="team foto" >
+                            <img class="team_card__img" src="./images/team_card_1_desktop.jpg" alt="team foto" >
                         </picture>
                         <h3 class="team__card__title">Jonh Doe</h3>
                         <p class="team__card__subtitle">Product Designer</p>
@@ -318,7 +330,7 @@
                                 type="image/jpg">
                             <source srcset="./images/team_card_2_desktop.jpg 1x, 
                                             ./images/team_card_2_desktop@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg">
-                            <img class="card__img" src="./images/team_card_2_mobile.jpg" alt="team foto" >
+                            <img class="team_card__img" src="./images/team_card_2_mobile.jpg" alt="team foto" >
                         </picture>
                         <h3 class="team__card__title">Jonh Doe</h3>
                         <p class="team__card__subtitle">Frontend Developer</p>
@@ -367,7 +379,7 @@
                             <source 
                             srcset="./images/team_card_3_desktop.jpg 1x, 
                         ./images/team_card_3_desktop@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg">
-                            <img class="card__img"
+                            <img class="team_card__img"
                             src="./images/team_card_3_mobile.jpg" 
                             alt="team foto">
                         </picture>
@@ -416,7 +428,7 @@
                                 type="image/jpg">
                             <source srcset="./images/team_card_4_desktop.jpg 1x, 
                                                 ./images/team_card_4_desktop@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg">
-                            <img class="card__img" src="./images/team_card_4_mobile.jpg" alt="team foto" >
+                            <img class="team_card__img" src="./images/team_card_4_mobile.jpg" alt="team foto" >
                         </picture>
                         <h3 class="team__card__title">Jonh Doe</h3>
                         <p class="team__card__subtitle">UI Designer</p>

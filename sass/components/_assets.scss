@@ -1,6 +1,5 @@
 .assets {
   @media screen and (max-width: 1199px) {
-    padding: 60px 0 ;
     &__item {
       display: flex;
       flex-direction: column;
@@ -44,6 +43,7 @@
   line-height: 1.14;
   font-weight: 700;
   margin-top: 0;
+  margin-bottom: 10px;
 }
 &__copy {
   font-size: 14px;
