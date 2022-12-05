@@ -19,11 +19,10 @@
     &_container {
         margin: 0 auto;
         position: relative;
-        height: 100%;
         padding: 48px 40px;
+        height: 100%;
         display: flex;
         flex-direction: column;
-
     }
     
     &.open {
