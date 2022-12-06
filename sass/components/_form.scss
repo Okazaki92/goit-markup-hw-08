@@ -180,11 +180,13 @@
   height: 15px;
   display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   border: solid 2px #212121;
   border-radius: 2px;
-  &.user__icon {
-  height: 15px;
+  padding: 4px 2px 3px 3px;
+  & .user__icon {
+  height: 8px;
+  width: 11px;
 }
 }
 
